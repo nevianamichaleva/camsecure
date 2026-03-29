@@ -37,7 +37,7 @@ export function Footer() {
                   hello@camsecure.bg
                 </a>
               </li>
-              <li className="text-slate-500">София, България</li>
+              <li className="text-slate-500">Варна, България</li>
             </ul>
           </div>
           <div>
