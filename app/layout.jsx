@@ -1,3 +1,4 @@
+import { FirebaseAnalytics } from "@/components/FirebaseAnalytics";
 import { DM_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 
@@ -13,7 +14,7 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const siteUrl = "https://camsecure.bg";
+const siteUrl = "https://camsecure.store";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
@@ -96,7 +97,10 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <FirebaseAnalytics />
+        {children}
+      </body>
     </html>
   );
 }

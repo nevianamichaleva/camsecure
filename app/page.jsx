@@ -5,6 +5,7 @@ import { Products } from "@/components/landing/Products";
 import { About } from "@/components/landing/About";
 import { Trust } from "@/components/landing/Trust";
 import { CtaSection } from "@/components/landing/CtaSection";
+import { ContactSection } from "@/components/landing/ContactSection";
 import { Footer } from "@/components/landing/Footer";
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
         <About />
         <Trust />
         <CtaSection />
+        <ContactSection />
       </main>
       <Footer />
     </>

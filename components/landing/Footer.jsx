@@ -8,10 +8,7 @@ const social = [
 
 export function Footer() {
   return (
-    <footer
-      id="contact"
-      className="border-t border-white/10 bg-[#060a12] py-16"
-    >
+    <footer className="border-t border-white/10 bg-[#060a12] py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
@@ -33,8 +30,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@camsecure.bg" className="hover:text-white">
-                  hello@camsecure.bg
+                <a href="mailto:support@camsecure.store" className="hover:text-white">
+                  support@camsecure.store
                 </a>
               </li>
               <li className="text-slate-500">Варна, България</li>
