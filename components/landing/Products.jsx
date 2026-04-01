@@ -10,21 +10,21 @@ const products = [
     desc: "2–4 камери, запис на NVR, мобилен достъп — идеално за апартамент или къща.",
     image:
       "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=800&q=80",
-    alt: "Място за снимка: комплект камери за дом",
+    alt: "Комплект камери за дом",
   },
   {
     name: "Бизнес · Офис / магазин",
     desc: "Покритие на зали, каса и склад — интеграция и разширяване при растеж.",
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
-    alt: "Място за снимка: видеонаблюдение в офис",
+    alt: "Видеонаблюдение в офис",
   },
   {
     name: "Персонално решение",
     desc: "Оглед, проект и монтаж според обекта — консултация без ангажимент.",
     image:
       "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
-    alt: "Място за снимка: персонална оферта камери",
+    alt: "Персонална оферта камери",
   },
 ];
 
@@ -66,7 +66,7 @@ export function Products() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0b1220]/90 to-transparent" />
                 <span className="absolute bottom-3 left-3 rounded-md bg-black/50 px-2 py-1 text-xs text-slate-300">
-                  Място за ваша снимка
+                  {p.alt}
                 </span>
               </div>
               <div className="p-6">

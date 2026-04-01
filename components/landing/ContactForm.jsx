@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { submitContactInquiry } from "@/lib/realtimeDb";
 
-const initial = { name: "", email: "", phone: "", message: "" };
+const initial = { name: "", email: "", phone: "", type: "", message: "" };
 
 export function ContactForm() {
   const [values, setValues] = useState(initial);
@@ -67,6 +67,31 @@ export function ContactForm() {
             placeholder="Вашето име"
           />
         </div>
+        <div className="sm:col-span-2">
+          <label htmlFor="contact-type" className="block text-sm font-medium text-slate-300">
+            Тип обект <span className="text-red-400">*</span>
+          </label>
+          <select
+            id="contact-type"
+            name="type"
+            required
+            value={values.type}
+            onChange={handleChange("type")}
+            disabled={busy}
+            className="mt-2 w-full rounded-xl border border-white/10 bg-[#0b1220] px-4 py-3 text-sm text-white placeholder:text-slate-600 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 disabled:opacity-60"
+          >
+            <option value="" disabled>
+              Изберете тип обект
+            </option>
+            <option value="дом">Дом / къща</option>
+            <option value="вход">Вход на блок</option>
+            <option value="офис">Офис</option>
+            <option value="магазин">Малък магазин</option>
+            <option value="склад">Склад / стопански двор</option>
+            <option value="хотел">Хотел / къща за гости</option>
+            <option value="друго">Друго</option>
+          </select>
+        </div>
         <div>
           <label htmlFor="contact-email" className="block text-sm font-medium text-slate-300">
             Email <span className="text-red-400">*</span>
@@ -124,7 +149,8 @@ export function ContactForm() {
 
       {status === "success" && (
         <p className="mt-4 rounded-lg bg-emerald-500/15 px-4 py-3 text-sm text-emerald-300">
-          Благодарим ви! Получихме запитването и ще се свържем с вас скоро.
+          Благодарим ви! Получихме запитването и ще се свържем с вас до няколко
+          часа в работно време.
         </p>
       )}
       {status === "error" && errorMessage && (

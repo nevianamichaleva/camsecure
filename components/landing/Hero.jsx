@@ -56,21 +56,22 @@ export function Hero() {
             <span className="text-blue-400">CamSecure</span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-slate-300 sm:text-xl">
-            Видео наблюдение за всяко помещение — от избор на оборудване до
-            инсталация и поддръжка. Ясни решения, сигурност без компромис.
+            Видео наблюдение за всяко помещение — камера за входа на блок,
+            двор на къща или видеонаблюдение за малък магазин. От избор на
+            оборудване до инсталация и поддръжка.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Link
-              href="#products"
+              href="#contact"
               className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-3.5 text-base font-semibold text-white shadow-xl shadow-blue-600/30 transition hover:bg-blue-500"
             >
-              Виж продуктите
+              Безплатна консултация за обекта
             </Link>
             <Link
-              href="#contact"
+              href="#products"
               className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/5 px-8 py-3.5 text-base font-semibold text-white backdrop-blur transition hover:bg-white/10"
             >
-              Свържи се с нас
+              Виж пакетите
             </Link>
           </div>
         </motion.div>

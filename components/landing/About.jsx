@@ -31,14 +31,17 @@ export function About() {
               </li>
             </ul>
           </div>
-          <div className="relative aspect-video overflow-hidden rounded-2xl border border-dashed border-white/20 bg-slate-900/80">
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-6 text-center">
-              <span className="text-sm font-medium text-slate-500">
-                Място за видео презентация или екип
-              </span>
-              <span className="max-w-xs text-xs text-slate-600">
-                Добавете video елемент или вграждане от YouTube/Vimeo
-              </span>
+          <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-slate-900/80">
+            <div className="relative pt-[56.25%]">
+              {/* <iframe
+                className="absolute inset-0 h-full w-full rounded-2xl"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Видео презентация на CamSecure"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              /> */}
             </div>
           </div>
         </div>

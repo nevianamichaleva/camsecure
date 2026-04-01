@@ -24,11 +24,11 @@ export function Footer() {
               Контакт
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-slate-300">
-              <li>
+              {/* <li>
                 <a href="tel:+359888000000" className="hover:text-white">
                   +359 888 000 000
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="mailto:support@camsecure.store" className="hover:text-white">
                   support@camsecure.store
@@ -39,25 +39,52 @@ export function Footer() {
           </div>
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
-              Навигация
+            Навигация
             </h3>
-            <ul className="mt-4 space-y-2 text-sm">
-              <li>
-                <Link href="#home" className="text-slate-300 hover:text-white">
-                  Начало
-                </Link>
-              </li>
-              <li>
-                <Link href="#products" className="text-slate-300 hover:text-white">
-                  Продукти
-                </Link>
-              </li>
-              <li>
-                <Link href="#about" className="text-slate-300 hover:text-white">
-                  За нас
-                </Link>
-              </li>
-            </ul>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li>
+              <Link href="#home" className="text-slate-300 hover:text-white">
+                Начало
+              </Link>
+            </li>
+            <li>
+              <Link href="#products" className="text-slate-300 hover:text-white">
+                Продукти
+              </Link>
+            </li>
+            <li>
+              <Link href="#about" className="text-slate-300 hover:text-white">
+                За нас
+              </Link>
+            </li>
+            <li className="pt-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
+              Локални страници
+            </li>
+            <li>
+              <Link
+                href="/video-nablyudenie-varna"
+                className="text-slate-300 hover:text-white"
+              >
+                Видеонаблюдение Варна
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/video-nablyudenie-dobrich"
+                className="text-slate-300 hover:text-white"
+              >
+                Видеонаблюдение Добрич
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/video-nablyudenie-obzor-nesebar"
+                className="text-slate-300 hover:text-white"
+              >
+                Видеонаблюдение Обзор / Несебър
+              </Link>
+            </li>
+          </ul>
           </div>
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-400">

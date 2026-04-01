@@ -8,6 +8,9 @@ const nav = [
   { href: "#products", label: "Продукти" },
   { href: "#about", label: "За нас" },
   { href: "#contact", label: "Свържи се с нас" },
+  { href: "/video-nablyudenie-varna", label: "Варна" },
+  { href: "/video-nablyudenie-dobrich", label: "Добрич" },
+  { href: "/video-nablyudenie-obzor-nesebar", label: "Обзор / Несебър" },
 ];
 
 export function Header() {

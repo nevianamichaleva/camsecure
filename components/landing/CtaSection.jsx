@@ -17,18 +17,17 @@ export function CtaSection() {
           <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-16 -left-16 h-48 w-48 rounded-full bg-blue-400/20 blur-2xl" />
           <h2 className="relative font-[family-name:var(--font-outfit)] text-3xl font-bold text-white sm:text-4xl">
-            Готови ли сте за по-сигурно място?
+            Безплатна консултация за вашия обект
           </h2>
           <p className="relative mx-auto mt-4 max-w-xl text-blue-100/90">
-            Свържете се за безплатна консултация или заявете демонстрация на
-            решенията ни.
+            Оставете контакти и кратко описание на обекта — обаждаме се до няколко часа в работно време, за да предложим конкретно решение.
           </p>
           <div className="relative mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="#contact"
               className="inline-flex min-w-[200px] items-center justify-center rounded-xl bg-white px-8 py-3.5 text-base font-semibold text-blue-700 shadow-lg transition hover:bg-blue-50"
             >
-              Свържи се с нас
+              Безплатна консултация
             </Link>
             <Link
               href="#products"
